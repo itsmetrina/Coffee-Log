@@ -1,0 +1,26 @@
+@for (coffee of list; track $index) {
+<mat-card>
+	<mat-card-header>
+		<mat-card-title>{{coffee.name}}</mat-card-title>
+		<mat-card-subtitle>{{coffee.place}}</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-actions>
+		<button mat-icon-button color="primary" (click)="goMap(coffee)">
+			<mat-icon>map</mat-icon>
+		</button>
+		<button mat-icon-button color="primary" (click)="share(coffee)">
+			<mat-icon>share</mat-icon>
+		</button>
+		<button mat-icon-button color="warn" (click)="deleteCoffee(coffee._id)">
+			<mat-icon>delete</mat-icon>
+		</button>
+		<button mat-icon-button color="primary" (click)="coffeeDetails(coffee)">
+			<mat-icon>arrow_forward</mat-icon>
+		</button>
+	</mat-card-actions>
+</mat-card>
+}
+
+<button id="buttonCreate" mat-fab (click)="createCoffe()">
+	<mat-icon>add</mat-icon>
+</button>

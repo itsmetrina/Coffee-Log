@@ -1,0 +1,35 @@
+mat-card,
+mat-card mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+mat-card mat-card-actions {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        margin: 0 8px;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    &.tasting {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+h2 {
+    margin: 15px 0 0;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+}
